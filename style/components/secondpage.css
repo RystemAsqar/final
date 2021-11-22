@@ -1,0 +1,45 @@
+.second-page{
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.second-page--item{
+    width: 50%;
+    height: 100vh;
+}
+
+.second-page--item:first-child{
+    background-color: #517ffe;
+    color: #fff;
+    padding: 150px 80px;
+    z-index: 10;
+}
+
+.second-page--item:first-child h2{
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.second-page--item:first-child p{
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
