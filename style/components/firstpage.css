@@ -95,7 +95,7 @@ text-transform: uppercase;
 
     .footer-but{
         position: absolute;
-        left: calc(50% - 17px);
+        left: calc(50% - 40px);
         bottom: 0px;
         width: 70px;
         height: 35px;
