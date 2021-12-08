@@ -1,0 +1,103 @@
+.fourth-page{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100vh;
+}
+
+.shop-item{
+    width: 33.3%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    transition: .5s;
+}
+
+.shop-item h2{
+    margin-bottom: 15px;
+}
+.shop-item p {
+    margin-bottom: 10px;
+    overflow: hidden;
+    opacity: 0;
+    transition: .4s;
+}
+
+.shop-item a {
+    margin-top: 5px;
+    overflow: hidden;
+    opacity: 0;
+    transition: .4s;
+    color: #fff;
+}
+
+#shoes1{
+    background: url(/images/Desktop\ -\ 1_auto_x2\ \(1\).jpg);
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 50vh;
+}
+
+#shoes2{
+    background: url(/images/IMG_6498.PNG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 50vh;
+}
+
+#shoes3{
+    background: url(/images/Desktop\ -\ 1_auto_x2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 50vh;
+}
+
+#shoes4{
+    background: url(/images/IMG_6505.PNG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 50vh;
+}
+
+#shoes5{
+    background: url(/images/Desktop\ -\ 1_auto_x2\ \(2\).jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 50vh;
+}
+
+#shoes6{
+    background: url(/images/Desktop\ -\ 1_auto_x2\ \(3\).jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 50vh;
+}
+
+.shop-item:hover a{
+    display: block;
+    opacity: 1;
+    margin-bottom: 35px;
+    transition: .4s;
+}
+
+.shop-item:hover p{
+    display: block;
+    opacity: 1;
+}
+
+@media(max-width:635px){
+    .shop-item{
+        width: 50%;
+        height: 50vh;
+    }
+
+    .footer-but{
+        display: none;
+    }
+}

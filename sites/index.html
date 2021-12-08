@@ -6,32 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Montserrat:wght@300;400;700&family=Quicksand:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <header class="header">
        <div class="header-total">
-           <img src="" alt="Picture">
+           <img src="../images/Screenshot_from_2021-12-03_17-33-40-removebg-preview.svg" alt="Picture">
         <div class="header-right">
             <a href="">Home</a>
-            <a href="">Welcome</a>
-            <a href="">Portfolio</a>
-            <a href="">Shop</a>
-            <a href="">Blog</a>
-            <a href="">Contact</a>
-            <img src="../images/cart_icon_128475.svg" alt="">
+            <a href="#about" onclick="changeWeb(2)">Welcome</a>
+            <a href="#portfolio" onclick="changeWeb(3)">Portfolio</a>
+            <a href="#shop" onclick="changeWeb(4)">Shop</a>
+            <a href="../sites/tickets.html">Tickets</a>
+            <a href="#contact" onclick="changeWeb(5)">Contact</a>
+            <a href="/sneaker/index.html" id="link-shop"><img src="../images/cart_icon_128475.svg" alt="" ></a>
             <img src="../images/searchmagnifierinterfacesymbol1_79893.svg" alt="">
+            <img src="../images/menu.svg" alt="" onclick="openAside()">
         </div>
        </div>
        
     </header>
 <section class="slideshow-container">
-    <section class="first-page mySlides fade">
+    <div class="first-page mySlides fade">
        <div class="first-page--item">
-          <a href="">Welcome</a>
+          <a href="#about" class="dot">Welcome</a>
        </div>
        <div class="first-page--item">
-        <a href="">Portfolio</a>
+        <a href="" class="dot">Portfolio</a>
      </div>
      <div class="first-page--item">
         <a href="">Shop</a>
@@ -42,8 +46,8 @@
      <div class="first-page--item">
         <a href="">My Story</a>
      </div>
-    </section>
-    <button class="footer-but"><img src="../images/arrow-up.svg" alt=""></button>
+   </div>
+    <button class="footer-but" onclick="openFooter()"><img src="../images/arrow-up.svg" alt=""></button>
     <span class="featured-arrow featured-arrow--left" onclick="plusSlides(-1)">
       <img src="../images/arrow.png" alt="">
   </span>
@@ -51,22 +55,153 @@
       <img src="../images/arrow.png" alt="">
   </span>
 
-  <section class="second-page mySlides fade">
+  <div class="second-page mySlides effect"  id="about">
    <div class="second-page--item">
       <h2>Welcome To Horizontal</h2>
         <p>Feel invigorated, inspired, and bring your memories back to life with the Ultra Horizontal Skin! Using vivid colours, horizontal scrolling, and big visual imagery, allow the reader to step into your memories with your breathtaking travel photos.
+         <br>
          <br>
          This is the perfect skin to showcase your landscapes and detail shots all at once, using the section scrolling with fancy parallax scrolling effect. The Ultra Horizontal also makes it easy for you to keep yourself afloat during your travels by using the built-in Portfolio and Shop section. Particularly special is the My Story page. Bring your readers in by sharing the big moments in your journey and how you got to where you are. </p>
    </div>
 
    <div class="second-page--item">
-      sab
+     <img src="../images/mountain-image.jpg" alt="">
    </div>
-</section>
+</div>
+
+
+<div class="third-page mySlides fade" id="portfolio">
+  
+      <a  class="third-page--item" href=""><h6>Nature</h6>
+         <p>Pine Jungle</p><img src="../images/jungle.jpg" alt=""></a>
+   
+   
+      <a href="" class="third-page--item"> <h6>Adventure</h6>
+         <p>Lake</p><img src="../images/lake.jpg" alt=""></a>
+  
+    <a href="" class="third-page--item"><h6>Nature</h6>
+      <p>Nature Times Infinity</p><img src="../images/sky.jpg" alt=""></a>
+ 
+
+    <a href="" class="third-page--item">
+      <h6>Adventure</h6>
+      <p>The Old City</p><img src="../images/city.jpg" alt=""></a>
+</div>
+
+<div class="fourth-page mySlides fade" id="shop">
+<div class="shop-item" id="shoes1"> 
+   <h2>Simond X</h2>
+   <p>190$</p>
+   <a href="/sneaker/index.html">Buy Now!</a>
+</div>
+<div class="shop-item" id="shoes2">
+   <h2>Nike Air Force 1</h2>
+   <p>290$</p>
+   <a href="/sneaker/index.html">Buy Now!</a>
+</div>
+<div class="shop-item" id="shoes3">
+   <h2>Nike Air Jordan 1</h2>
+   <p>320$</p>
+   <a href="/sneaker/index.html">Buy Now!</a>
+</div>
+<div class="shop-item" id="shoes4">
+   <h2>Timberland</h2>
+   <p>170$</p>
+   <a href="/sneaker/index.html">Buy Now!</a>
+</div>
+<div class="shop-item" id="shoes5">
+   <h2>Asolo afs Black</h2>
+   <p>229$</p>
+   <a href="/sneaker/index.html">Buy Now!</a>
+</div>
+<div class="shop-item" id="shoes6">
+   <h2>Asics Upcourt 3</h2>
+   <p>119$</p>
+   <a href="/sneaker/index.html">Buy Now!</a>
+</div>
+</div>
+
+<div class="last-page mySlides effect" id="contact">
+   <div class="last-page--left">
+        <h2>Contact</h2>
+        <p>Let’s chat! As a freelance photographer and full time explorer, I’d love to help you tackle your next venture. Let me help you either with a photography session, or by designing a site unique to you and your needs. </p>
+        <div class="inputs">
+           <input type="text" placeholder="Your Name">
+           <input type="text" placeholder="Your Email">
+           <input type="text" placeholder="Subject">
+        </div>
+        <textarea name="text" id="message" cols="30" rows="10" placeholder="message"></textarea>
+        <br>
+        <button>Send</button>
+   </div>
+
+   <div class="last-page--right">
+      <div style="position:relative;overflow:hidden;"><a href="https://yandex.kz/maps?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Яндекс.Карты</a><a href="https://yandex.kz/maps/?feedback=map%2Fedit&feedback-context=map.controls&ll=76.669680%2C43.207801&utm_medium=mapframe&utm_source=maps&z=17.32" style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс.Карты</a><iframe src="https://yandex.kz/map-widget/v1/-/CCUujNeOCA" width="100%"  frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+   </div>
+</div>
 
 </section>
+
+<aside class="aside" id="aside">
+   <div class="aside-backdrop" onclick="closeAside()"></div>
+   <div class="aside-inner">
+      <div class="aside-item close">
+         <span onclick="closeAside()">
+             <i>&#x2715;</i>
+             Close
+         </span>
+     </div>
+   <div class="aside-item">
+      Home
+  </div>
+  <div class="aside-item" onclick="changeWeb(2),closeAside()">
+   Welcome
+</div>
+<div class="aside-item" onclick="changeWeb(3),closeAside()">
+   Portfolio
+</div>
+<div class="aside-item" onclick="changeWeb(4),closeAside()">
+   Shop
+</div>
+<div class="aside-item">
+   Blog
+</div>
+<div class="aside-item" onclick="changeWeb(5),closeAside()">
+ Contact
+</div>
+
+</div>
+
+</aside>
+
+<footer class="footer" id="footer">
+      <div class="footer-left">
+              <img src="../images/Screenshot_from_2021-12-03_17-33-40-removebg-preview.svg" alt="">
+              <div class="apps">
+                 <img src="../images/1217141_fb_icon.svg" alt="">
+                 <img src="../images/1217163_twitter_icon.svg" alt="">
+                 <img src="../images/1217140_youtube_icon.svg" alt="">
+                 <img src="../images/1217176_google_icon.svg" alt="">
+              </div>
+              <p>© <a href="">Horizontal</a> 2021</p>
+              <p>Powered by TheBoys</p>
+      </div>
+      <button class="closeButton" onclick="closeFooter()">X</button>
+      <div class="footer-right">
+         <h2>Our Story</h2>
+         <p>A journey of a thousand miles starts with a single step. Let me help you start that journey… from one single step to a thousand. Here’s to you.</p>
+      </div>
+</footer>
+
+<div class="reserv">
+
+</div>
+
+
 
 <script src="../js/slider.js"></script>
+<script src="../js/aside.js"></script>
+<script src="../js/footer.js"></script>
 
 </body>
 </html>
