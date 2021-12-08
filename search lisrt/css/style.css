@@ -1,10 +1,13 @@
 body{
     margin: 0;
-    padding: 0;
-    background: url("../moun/mountains.jpg");   
+    padding: 0;   
     background-size: cover;
     font-family: sans-serif;
-
+    background: url(../moun/search\ photo\ .jpg);
+}
+.bodyimg {
+    width: 100%;
+    height: 90vh;
 }
 h1 {
     margin: 0 0 10px;
