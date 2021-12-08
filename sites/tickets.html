@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styleTickets/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-item">
+            <div class="logo"><img src="../images/Screenshot_from_2021-12-03_17-33-40-removebg-preview.svg" alt=""></div>
+            <div class="header-tot">
+            <div class="header-up">
+                <i>
+                    <img src="../images/Group.svg" alt="">
+                    +7 (7172) 25-20-60 / +7 (708) 425-20-60 
+                </i>
+                <i>
+                    <img src="../images/Vector.svg" alt="">
+                    г. Almaty
+                </i>
+                <i>
+                    <img src="../images/envelope.png" alt="">
+                    info@preess-booking.kz
+                </i>
+            </div>
+            <div class="header-down">
+                <a href="">About Company</a>
+                <a href="">Services</a>
+                <a href="">Advantages</a>
+                <a href="">Contacts</a>
+            </div>
+        </div>
+        </div>
+    
+ <div class="total">
+        <div class="firstpage">
+            <h1>Booking center</h1>
+            <p>We help you to find the best tour</p>
+            <button onclick="book()">Book now</button>
+            <div class="apps">
+                <img src="../images/Facebook (1).svg" alt="">
+                <img src="../images/Instagram.svg" alt="">
+                <img src="../images/Telegram.svg" alt="">
+            </div>
+      </div>
+
+      <div class="secondpage">
+          <h2>Find your tour</h2>
+          <span>
+          <p>From</p>
+          <select name="From" id="from">
+              <option value="New York">New York</option>
+              <option value="Seoul">Seoul</option>
+              <option value="Tokyo">Tokyo</option>
+          </select>
+        </span>
+        
+          <span>
+         <p>To</p>
+          <select name="To" id="to">
+              <option value="Barcelona">Barcelona</option>
+              <option value="Ankara">Ankara</option>
+              <option value="Almaty">Almaty</option>
+          </select>
+        </span>
+          <div class="time">
+              <input type="date" id="date">
+              <select name="length" id="len">
+                <option value="Any Length">Any Length</option>
+                <option value="Two">2 days</option>
+                <option value="Three">3 days</option>
+            </select>
+          </div>
+          <div class="people">
+              <div class="children">
+                  <p>Adult Num</p>
+                  <img src="../images/211863_minus_round_icon.svg" onclick="plusValue(-1)" alt="">
+                  <input type="number" id="number">
+                  <img src="../images/134224_add_plus_new_icon.svg" onclick="plusValue(1)" alt="">
+              </div>
+              <div class="children">
+                  <p>Child Num</p>
+                <img src="../images/211863_minus_round_icon.svg"  onclick="plusValues(-1)" alt="">
+                <input type="number" id="nums">
+                <img src="../images/134224_add_plus_new_icon.svg" onclick="plusValues(1)" alt="">
+            </div>
+          </div>
+      </div>
+        
+    </div>
+    </header>
+   
+    <!-- <section>
+        <p>Your flight have already booked</p>
+        <p>From New York To Kazakhstan 29.12.2021 2 days Adults: 0 Children: 0</p>
+    </section> -->
+
+    <script src="../js/tickets.js"></script>
+</body>
+</html>
