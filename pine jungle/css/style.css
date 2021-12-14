@@ -40,9 +40,9 @@ body {
 
 .csd {
     display: flex;
+    justify-content: center;
     font-family: Nunito;
     font-size: 18px;
-    margin-left: 185px;
     margin-top: 30px;
 }
 
@@ -87,70 +87,56 @@ body {
 }
 
 
-.bottom {
-    background-color: rgb(224, 224, 224);
-    height: 425px;
-    overflow: hidden;
-    padding-bottom: 10px;
+.bottom{
     display: flex;
-    -webkit-box-shadow: 0px -4px 5px 0px rgba(75, 75, 75, 0.75);
-    -moz-box-shadow: 0px -4px 5px 0px rgba(75, 75, 75, 0.75);
-      box-shadow: 0 1px 30px -3px  rgba(75, 75, 75, 0.75);
+    justify-content: space-around;
+    padding: 10px 50px;
+    background-color: #ebe9e9;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
-.bottoms {
-    margin-left: 200px;
-    display: flex;
 
+.h p, .o p, .p p{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.h{
+    width: 30%;
+}
+
+.o{
+    width: 30%;
+}
+
+.p{
+    width: 30%;
+}
+.h a img{
+width: 19px;
+filter: invert(1);
+}
+
+.h a, .o a, .p a{
+    text-decoration: none;
+    color: #717171;
 }
 .o {
-    padding-left: 100px;
-    margin-top: 70px;
-    width: 350px;
-    font-family: Rubik;
-}
-.h {
-    margin-top: 60px;
-    font-family: Rubik;
-}
-.horizontal {
-    font-weight: 700;
-    font-size: 25px;
-}
-.our {
-    font-weight: 700;
-    font-size: 20px;
+padding: 0 60px;
 }
 
-.textthird {
-    font-family: Nunito;
-    font-weight: 100;
-    padding-right: 80px;
-    text-align: justify;
+.o h3{
+    color: rgba(76, 75, 95, 0.767);
 }
 
-.h img {
-    width: 10%;
-    margin-right: 15px;
-}
-.more {
-    text-decoration: none;
-    color: blue;
+
+
+.p img{
+    width: 18px;
 }
 
-#read {
-    font-style: italic;
-}
-.p {
-    margin-top: 70px;
-    font-family: Rubik;
-}
-.product {
-    font-weight: 700;
-    font-size: 20px;  
-}
-.shoes {
-    width: 5%;
-    border-radius: 20%;
-
-    
+@media(max-width: 565px){
+    .text{
+        margin: 0px 50px;
+    }
 }
