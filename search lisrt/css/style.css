@@ -54,3 +54,8 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background: #ff5722;
 }
+
+ul{
+    background-color: #fff;
+    border-radius: 30px;
+}

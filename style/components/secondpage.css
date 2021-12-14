@@ -80,7 +80,7 @@
     }
     .second-page--item:first-child p{
         font-size: 19px;
-        line-height: 18px;
+        line-height: 15px;
         font-family: 'Quicksand', sans-serif;
     }
 
@@ -105,7 +105,7 @@
   @media(max-width:480px){
     .second-page--item:first-child p{
       font-size: 14px;
-      line-height: 18px;
+      line-height: 15px;
       font-family: 'Quicksand', sans-serif;
   }
   }
