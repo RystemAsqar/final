@@ -537,6 +537,7 @@ a {
 }
 
 .store__block {
+    
     transition: all 0.4s ease-out;
     width: 335px;
     height: 370px;
