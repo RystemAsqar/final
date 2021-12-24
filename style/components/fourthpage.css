@@ -37,7 +37,7 @@
 }
 
 #shoes1{
-    background: url(/images/Desktop\ -\ 1_auto_x2\ \(1\).jpg);
+    background: url(../../images/Desktop\ -\ 1_auto_x2\ \(1\).jpg);
     
     background-position: center;
     background-repeat: no-repeat;
@@ -45,35 +45,35 @@
 }
 
 #shoes2{
-    background: url(/images/IMG_6498.PNG);
+    background: url(../../images/IMG_6498.PNG);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 50vh;
 }
 
 #shoes3{
-    background: url(/images/Desktop\ -\ 1_auto_x2.jpg);
+    background: url(../../images/Desktop\ -\ 1_auto_x2.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 50vh;
 }
 
 #shoes4{
-    background: url(/images/IMG_6505.PNG);
+    background: url(../../images/IMG_6505.PNG);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 50vh;
 }
 
 #shoes5{
-    background: url(/images/Desktop\ -\ 1_auto_x2\ \(2\).jpg);
+    background: url(../../images/Desktop\ -\ 1_auto_x2\ \(2\).jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 50vh;
 }
 
 #shoes6{
-    background: url(/images/Desktop\ -\ 1_auto_x2\ \(3\).jpg);
+    background: url(../../images/Desktop\ -\ 1_auto_x2\ \(3\).jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 50vh;
